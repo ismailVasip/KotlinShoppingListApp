@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    android:orientation="vertical"
+    tools:context=".Views.AddListActivity">
+
+    <EditText
+        android:layout_width="200dp"
+        android:layout_height="48dp"
+        android:id="@+id/etTittleAddAct"
+        android:fontFamily="sans-serif-condensed-light"
+        android:maxLines="1"
+        android:inputType="text"
+        android:background="@drawable/edit_text_corner"
+        android:textColor="@color/yellow"
+        android:textColorHint="@color/yellow"
+        android:hint="@string/TittleItem"
+        android:autofillHints="true"
+        android:textSize="19sp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="32dp"
+        android:layout_marginStart="5dp"
+        android:padding="7dp" />
+
+    <ImageView
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:background="@drawable/baseline_done_24"
+        android:id="@+id/imDoneAddAct"
+        android:onClick="saveList"
+        android:contentDescription="@string/contentDescription"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:id="@+id/etDescriptionAddAct"
+        android:maxLines="2"
+        android:inputType="text"
+        android:background="@drawable/edit_text_corner"
+        android:hint="@string/Description"
+        android:autofillHints="true"
+        android:textSize="19sp"
+        android:fontFamily="sans-serif-condensed-light"
+        android:textColorHint="@color/yellow"
+        android:textColor="@color/yellow"
+        android:layout_below="@+id/etTittleAddAct"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="5dp"
+        android:padding="7dp"/>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/etDescriptionAddAct"
+        android:background="@drawable/edit_text_corner"
+        android:layout_marginTop="16dp"
+        android:padding="7dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:layout_width="280dp"
+                    android:layout_height="48dp"
+                    android:id="@+id/etAddItemAddAct"
+                    android:background="@drawable/edit_text_corner"
+                    android:fontFamily="sans-serif-condensed-light"
+                    android:hint="@string/enter_item"
+                    android:autofillHints="true"
+                    android:textSize="19sp"
+                    android:inputType="text"
+                    android:textColorHint="@color/yellow"
+                    android:textColor="@color/yellow"
+                    android:layout_margin="16dp"
+                    android:padding="7dp"
+                    android:maxLines="1"/>
+
+                <ImageView
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:onClick="addItem"
+                    android:id="@+id/addItemAddAct"
+                    android:contentDescription="@string/contentDescription"
+                    android:src="@drawable/baseline_playlist_add_24"/>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/your_listAddAct"
+                android:textSize="27sp"
+                android:textColor="@color/yellow"
+                android:fontFamily="sans-serif-condensed-light"
+                android:textStyle="italic"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="2dp"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/itemRV"
+                android:padding="3dp"
+                android:layout_marginTop="2dp"/>
+
+        </LinearLayout>
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</RelativeLayout>

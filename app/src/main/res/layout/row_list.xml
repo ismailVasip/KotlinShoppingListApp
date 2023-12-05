@@ -1,0 +1,40 @@
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="12dp"
+    app:cardElevation="4dp"
+    app:cardUseCompatPadding="true">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/black2"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxHeight="48dp"
+            android:id="@+id/tvItemNameRowList"
+            android:text="@string/Example"
+            android:layout_marginStart="8dp"
+            android:textSize="27sp"
+            android:fontFamily="sans-serif-condensed-light"
+            android:textColor="@color/yellow"/>
+        <ImageView
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:id="@+id/ivDeleteButtonRowList"
+            android:contentDescription="@string/contentDescription"
+            android:layout_marginEnd="8dp"
+            android:src="@drawable/baseline_delete_24"
+            android:layout_alignParentEnd="true"
+            android:layout_alignEnd="@id/tvItemNameRowList" />
+
+    </RelativeLayout>
+
+
+
+</androidx.cardview.widget.CardView>

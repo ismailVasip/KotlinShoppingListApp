@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">KotlinShoppingApp</string>
+    <string name="Tittle">Ready for shopping?</string>
+    <string name="Today">Today</string>
+    <string name="TittleItem">Tittle</string>
+    <string name="Description">Description</string>
+    <string name="your_listAddAct">Your List</string>
+    <string name="your_list">Your Lists</string>
+    <string name="enter_item">Enter Item</string>
+    <string name="time">21.12.2023</string>
+    <string name="contentDescription">Optional</string>
+    <string name="contentDescriptionButton">Optional2</string>
+    <string name="Example">Example</string>
+    <string name="EmptyList">Prepare your list,\nlet\'s go shopping.</string>
+
+</resources>
